@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --grey: hsl(210, 32%, 22%);
+  --background: hsl(215, 39%, 17%);
+}
+
+body {
+  width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  width: 415px;
+  height: 415px;
+  border-radius: 20px;
+  background-color: var(--background);
+  position: relative;
+}
+
+.first-box {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+
+.icon {
+  background: url('./images/icon-star.svg') no-repeat center;
+  border-radius: 50%;
+  background-color: var(--grey);
+  width: 52px;
+  height: 52px;
+}
+
+.title {
+  font-family: 'Overpass', sans-serif;
+  color: var(--white);
+}
+
+.paragraph p {
+  font-family: 'Overpass', sans-serif;
+  color: var(--medium-grey);
+  font-size: 15px;
+}
+
+.level {
+  display: flex;
+  justify-content: space-between;
+}
+
+.level button {
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--grey);
+  color: var(--light-grey);
+  font-size: 15px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.level button:hover {
+  color: var(--white);
+  background-color: var(--light-grey);
+}
+
+button.highlight {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.btn {
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  padding: 17px;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  transition: .5s;
+}
+
+.second-box {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-2 {
+  width: 170px;
+  height: 113px;
+  background: url('./images/illustration-thank-you.svg') no-repeat;
+}
+
+.feedback {
+  background-color: var(--dark-blue);
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+  color: var(--orange);
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+
+.second-box .paragraph p {
+  text-align: center;
+  
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
