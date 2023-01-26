@@ -12,7 +12,7 @@
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
   --grey: hsl(210, 32%, 22%);
-  --background: hsl(215, 39%, 17%);
+  --background:  hsl(215, 39%, 17%);
 }
 
 body {
@@ -144,4 +144,25 @@ button.highlight {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+  }
+
+  .container {
+    width: 327px;
+    height: 361px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .level button {
+    width: 40px;
+    height: 40px;
+  }
 }
